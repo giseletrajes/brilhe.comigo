@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gisele Viera Trajes — Trajes</title>
+  <meta name="description" content="Conheça nossa coleção de trajes: cada peça conta uma história para você brilhar em noivados, festas e cerimônias.">
+  <link rel="canonical" href="https://giseletrajes.github.io/brilhe.comigo/trajes.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph / Redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Gisele Viera Trajes">
+  <meta property="og:title" content="Gisele Viera Trajes — Trajes">
+  <meta property="og:description" content="Conheça nossa coleção de trajes: cada peça conta uma história para você brilhar.">
+  <meta property="og:image" content="https://giseletrajes.github.io/brilhe.comigo/assets/images/favicon/android-chrome-512x512.png">
+  <meta property="og:url" content="https://giseletrajes.github.io/brilhe.comigo/trajes.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.svg" alt="Gisele Trajes" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="logo-text" style="display:none">Gisele Viera Trajes®</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="trajes.html" class="nav-link active">Trajes</a>
+        <a href="depoimentos.html" class="nav-link">Depoimentos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+     <a href="https://wa.me/5511957834601?text=Olá!%20Vim%20pelo%20site%20da%20Gisele%20Viera%20Trajes%20e%20gostaria%20de%20mais%20informações." target="_blank" class="btn btn-primary header-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+        Agende sua experiência
+      </a>
+      <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Início</a>
+      <a href="trajes.html">Trajes</a>
+      <a href="depoimentos.html">Depoimentos</a>
+      <a href="contato.html">Contato</a>
+      <a href="https://wa.me/5511957834601" target="_blank" class="btn btn-primary">Agende sua experiência</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="assets/images/trajes-hero.jpg" alt="" onerror="this.parentElement.classList.add('no-img')">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container page-hero-content">
+        <p class="section-eyebrow light">Nossa Coleção</p>
+        <h1 class="page-hero-title">Trajes</h1>
+        <p class="page-hero-sub">Cada traje conta uma história para você brilhar.</p>
+      </div>
+    </section>
+
+    <!-- FILTROS -->
+    <section class="filters-bar">
+      <div class="container filters-inner">
+        <button class="filter-btn active" onclick="filterCategory('all')">Todos</button>
+       <button class="filter-btn" onclick="filterCategory('noivas')">Noivas</button>
+       <button class="filter-btn" onclick="filterCategory('masculino')">Traje Masculino</button>
+       <button class="filter-btn" onclick="filterCategory('Saiu e Brilhou')">Saiu e Brilhou</button>
+        <button class="filter-btn" onclick="filterCategory('debutantes')">Debutantes</button>
+        <button class="filter-btn" onclick="filterCategory('longos')">Longos</button>
+        <button class="filter-btn" onclick="filterCategory('curtos')">Curtos</button>
+        <button class="filter-btn" onclick="filterCategory('clutches')">Clutches/acessorios</button>
+       <!-- <button class="filter-btn" onclick="filterCategory('acessorios')">Acessórios</button>-->
+      </div>
+    </section>
+
+    <!-- NOIVAS -->
+    <section class="gallery-section section" id="noivas" data-category="noivas">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Noivas</h2>
+          <p class="gallery-desc">Da minimalista à princesa, temos o vestido certo para o seu estilo e personalidade.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item tall">
+            <img src="assets/images/noiva-1.jpg" alt="Vestido de Noiva 1" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/noiva-2.jpg" alt="Vestido de Noiva 2" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/noiva-3.jpg" alt="Vestido de Noiva 3" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/noiva-4.jpg" alt="Vestido de Noiva 4" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/noiva-5.jpg" alt="Vestido de Noiva 5" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/noiva-6.jpg" alt="Vestido de Noiva 6" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJE MASCULINO -->
+    <section class="gallery-section section bg-soft" id="masculino" data-category="masculino">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Traje Masculino</h2>
+          <p class="gallery-desc">Elegância e sofisticação para o noivo e seus padrinhos no dia mais especial.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item tall">
+            <img src="assets/images/masc-1.jpg" alt="Traje Masculino 1" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/masc-2.jpg" alt="Traje Masculino 2" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/masc-3.jpg" alt="Traje Masculino 3" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/masc-4.jpg" alt="Traje Masculino 4" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/masc-5.jpg" alt="Traje Masculino 5" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/masc-6.jpg" alt="Traje Masculino 6" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAIU DE BRILHOU -->
+    <section class="gallery-section section" id="damas" data-category="damas">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Damas</h2>
+          <p class="gallery-desc">Nossas clientes que sairam e brilharam.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/dama-1.jpg" alt="Vestido de Dama 1" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/dama-2.jpg" alt="Vestido de Dama 2" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/dama-3.jpg" alt="Vestido de Dama 3" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/dama-4.jpg" alt="Vestido de Dama 4" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/dama-5.jpg" alt="Vestido de Dama 5" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/dama-6.jpg" alt="Vestido de Dama 6" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEBUTANTES -->
+    <section class="gallery-section section bg-soft" id="debutantes" data-category="debutantes">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Debutantes</h2>
+          <p class="gallery-desc">Para os 15 anos mais brilhante da sua vida, com toda a elegância e juventude que você merece.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/debutante-1.jpg" alt="Vestido de Debutante 1" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/debutante-2.jpg" alt="Vestido de Debutante 2" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/debutante-3.jpg" alt="Vestido de Debutante 3" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/debutante-4.jpg" alt="Vestido de Debutante 4" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/debutante-5.jpg" alt="Vestido de Debutante 5" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/debutante-6.jpg" alt="Vestido de Debutante 6" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LONGOS -->
+    <section class="gallery-section section" id="longos" data-category="longos">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Longos</h2>
+          <p class="gallery-desc">Vestidos longos para eventos formais, formaturas e ocasiões especiais.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item tall">
+            <img src="assets/images/longo-1.jpg" alt="Vestido Longo 1" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/longo-2.jpg" alt="Vestido Longo 2" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/longo-3.jpg" alt="Vestido Longo 3" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/longo-4.jpg" alt="Vestido Longo 4" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/longo-5.jpg" alt="Vestido Longo 5" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/longo-6.jpg" alt="Vestido Longo 6" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURTOS -->
+    <section class="gallery-section section bg-soft" id="curtos" data-category="curtos">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Curtos</h2>
+          <p class="gallery-desc">Modernos, elegantes e cheios de personalidade para qualquer ocasião.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/curto-1.jpg" alt="Vestido Curto 1" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/curto-2.jpg" alt="Vestido Curto 2" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/curto-3.jpg" alt="Vestido Curto 3" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/curto-4.jpg" alt="Vestido Curto 4" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/curto-5.jpg" alt="Vestido Curto 5" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/curto-6.jpg" alt="Vestido Curto 6" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLUTCHES -->
+    <section class="gallery-section section" id="clutches" data-category="clutches">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Clutches/acessorios</h2>
+          <p class="gallery-desc">Bolsas de mão e acessorios sofisticadas para completar o look com charme e elegância.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/clutch-1.jpg" alt="Clutch 1" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/clutch-2.jpg" alt="Clutch 2" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/clutch-3.jpg" alt="Clutch 3" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/clutch-4.jpg" alt="Clutch 4" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/clutch-5.jpg" alt="Clutch 5" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/clutch-6.jpg" alt="Clutch 6" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACESSÓRIOS
+    <section class="gallery-section section bg-soft" id="acessorios" data-category="acessorios">
+      <div class="container">
+        <div class="gallery-header">
+          <p class="section-eyebrow">Coleção</p>
+          <h2 class="section-title">Acessórios</h2>
+          <p class="gallery-desc">Os detalhes que fazem toda a diferença — véus, tiaras, brincos e muito mais.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/acess-1.jpg" alt="Acessório 1" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/acess-2.jpg" alt="Acessório 2" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/acess-3.jpg" alt="Acessório 3" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/acess-4.jpg" alt="Acessório 4" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item tall">
+            <img src="assets/images/acess-5.jpg" alt="Acessório 5" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/acess-6.jpg" alt="Acessório 6" onerror="this.parentElement.classList.add('placeholder-img')">
+          </div>
+        </div>
+      </div>
+    </section>  -->
+
+    <!-- CTA -->
+    <section class="cta-section section bg-dark">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <p class="section-eyebrow light">Próximo passo</p>
+          <h2 class="section-title light">Gostou de alguma peça?</h2>
+          <p class="body-text light">Agende sua experiência conosco. Nosso atendimento é com hora marcada.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://wa.me/5511957834601?text=Olá!%20Gostaria%20de%20agendar%20minha%20experiência." target="_blank" class="btn btn-light btn-lg">Agendar via WhatsApp</a>
+          <a href="contato.html" class="btn btn-outline-light btn-lg">Enviar mensagem</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.svg" alt="Gisele Trajes" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <span class="logo-text footer-logo-text" style="display:none">Gisele Trajes</span>
+        <p class="footer-tagline"><em>"Se não pra brilhar,a gente não sai de casa!"</em></p>
+      </div>
+            <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Endereço</h4>
+          <p>Avenida Tancredo Neves, 414 - Centro, Vargem Grande Paulista</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p>Tel:  (11) 95783-4601</p>
+          <p>giseletrajes@gmail.com</p>
+        </div>
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <p>Segunda a sexta 10h às 18h</p>
+          <p>Sábado: 09h às 14h</p>
+          <p>Domingo: fechado</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Gisele Trajes. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/giselevieira.trajes?igsh=MWN2bXEzNnM3ZTVnYQ==" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

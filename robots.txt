@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giseletrajes.github.io/brilhe.comigo/sitemap.xml
