@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://giseletrajes.github.io/brilhe.comigo/sitemap.xml
+Sitemap: https://www.giselevieiratrajes.com.br/sitemap.xml
