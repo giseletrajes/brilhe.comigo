@@ -39,6 +39,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Gisele Vieira Trajes",
+    "image": "https://www.giselevieiratrajes.com.br/assets/images/hero-bg.jpg",
+    "url": "https://www.giselevieiratrajes.com.br/",
+    "telephone": "+5511957834601",
+    "email": "giseletrajes@gmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Tancredo Neves, 414 - Centro",
+      "addressLocality": "Vargem Grande Paulista",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.6063138,
+      "longitude": -47.0280977
+    },
+    "sameAs": [
+      "https://www.instagram.com/giselevieira.trajes"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -78,12 +105,13 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-bg">
-        <img src="assets/images/hero-bg.jpg" alt="" class="hero-img" onerror="this.parentElement.classList.add('no-img')">
+        <img src="assets/images/hero-bg.jpg" alt="" class="hero-img" onerror="this.parentElement.classList.add('no-img')" width="960" height="960" fetchpriority="high">
         <div class="hero-overlay"></div>
       </div>
       <div class="container hero-content">
         <p class="hero-eyebrow">Noivas & Festas</p>
-        <h1 class="hero-title">Se não for pra<br><em>Brilhar</em>,a gente não sai de casa!</h1>
+        <div class="hero-divider"></div>
+        <h1 class="hero-title">Se não for pra<br><em>Brilhar</em>, a gente não sai de casa!</h1>
         <p class="hero-subtitle">Lindos trajes para você sair e brilhar em cada momento especial!</p>
         <div class="hero-actions">
           <a href="trajes.html" class="btn btn-light">Ver Coleção</a>
@@ -101,10 +129,10 @@
       <div class="container about-grid">
         <div class="about-images">
           <div class="about-img-main">
-            <img src="assets/images/about-main.jpg" alt="Ateliê Gisele Trajes" onerror="this.parentElement.classList.add('placeholder-img')">
+            <img src="assets/images/about-main.jpg" alt="Ateliê Gisele Trajes" onerror="this.parentElement.classList.add('placeholder-img')" width="854" height="1280" loading="lazy" decoding="async">
           </div>
           <div class="about-img-accent">
-            <img src="assets/images/about-accent.jpg" alt="Detalhes do ateliê" onerror="this.parentElement.classList.add('placeholder-img')">
+            <img src="assets/images/about-accent.jpg" alt="Detalhes do ateliê" onerror="this.parentElement.classList.add('placeholder-img')" width="854" height="1034" loading="lazy" decoding="async">
           </div>
         </div>
         <div class="about-text">
@@ -133,7 +161,7 @@ Hoje, Gisele Vieira Trajes, uma locadora familiar com aluguel de trajes para noi
         <div class="categories-grid">
           <a href="trajes.html#noivas" class="category-card group">
             <div class="category-img">
-              <img src="assets/images/cat-noiva.jpg" alt="Vestidos de Noiva" onerror="this.parentElement.classList.add('placeholder-img')">
+              <img src="assets/images/cat-noiva.jpg" alt="Vestidos de Noiva" onerror="this.parentElement.classList.add('placeholder-img')" width="1066" height="1399" loading="lazy" decoding="async">
             </div>
             <div class="category-info">
               <h3>Vestidos de Noiva</h3>
@@ -142,7 +170,7 @@ Hoje, Gisele Vieira Trajes, uma locadora familiar com aluguel de trajes para noi
           </a>
           <a href="trajes.html#madrinhas" class="category-card group">
             <div class="category-img">
-              <img src="assets/images/cat-madrinha.jpg" alt="Vestidos de Madrinha" onerror="this.parentElement.classList.add('placeholder-img')">
+              <img src="assets/images/cat-madrinha.jpg" alt="Vestidos de Madrinha" onerror="this.parentElement.classList.add('placeholder-img')" width="787" height="1391" loading="lazy" decoding="async">
             </div>
             <div class="category-info">
               <h3>vestido de festa</h3>
@@ -151,7 +179,7 @@ Hoje, Gisele Vieira Trajes, uma locadora familiar com aluguel de trajes para noi
           </a>
           <a href="trajes.html#debutantes" class="category-card group">
             <div class="category-img">
-              <img src="assets/images/cat-debutante.jpg" alt="Vestidos de Debutante" onerror="this.parentElement.classList.add('placeholder-img')">
+              <img src="assets/images/cat-debutante.jpg" alt="Vestidos de Debutante" onerror="this.parentElement.classList.add('placeholder-img')" width="960" height="1280" loading="lazy" decoding="async">
             </div>
             <div class="category-info">
               <h3>Vestidos de Debutante/ 15 anos</h3>
@@ -172,19 +200,19 @@ Hoje, Gisele Vieira Trajes, uma locadora familiar com aluguel de trajes para noi
         <div class="highlights-grid" id="highlightsGrid">
           <!-- Carregado via JS do repositório de imagens -->
           <div class="highlight-card">
-            <div class="highlight-img"><img src="assets/images/dest-1.jpg" alt="Destaque 1" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+            <div class="highlight-img"><img src="assets/images/dest-1.jpg" alt="Destaque 1" onerror="this.parentElement.classList.add('placeholder-img')" width="1024" height="1280" loading="lazy" decoding="async"></div>
             <p class="highlight-label">Novo</p>
           </div>
           <div class="highlight-card">
-            <div class="highlight-img"><img src="assets/images/dest-2.jpg" alt="Destaque 2" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+            <div class="highlight-img"><img src="assets/images/dest-2.jpg" alt="Destaque 2" onerror="this.parentElement.classList.add('placeholder-img')" width="854" height="1280" loading="lazy" decoding="async"></div>
             <p class="highlight-label">Novo</p>
           </div>
           <div class="highlight-card">
-            <div class="highlight-img"><img src="assets/images/dest-3.jpg" alt="Destaque 3" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+            <div class="highlight-img"><img src="assets/images/dest-3.jpg" alt="Destaque 3" onerror="this.parentElement.classList.add('placeholder-img')" width="932" height="1400" loading="lazy" decoding="async"></div>
             <p class="highlight-label">Novo</p>
           </div>
           <div class="highlight-card">
-            <div class="highlight-img"><img src="assets/images/dest-4.jpg" alt="Destaque 4" onerror="this.parentElement.classList.add('placeholder-img')"></div>
+            <div class="highlight-img"><img src="assets/images/dest-4.jpg" alt="Destaque 4" onerror="this.parentElement.classList.add('placeholder-img')" width="854" height="1280" loading="lazy" decoding="async"></div>
             <p class="highlight-label">Novo</p>
           </div>
         </div>
